@@ -13,7 +13,7 @@ function anagrams(stringA, stringB) {
   const charMapB = buildCharMap(stringB);
 
   //Check if both objects have same number of keys
-  if(Object.keys(charMapA).length === Object.keys(charMapB).length) {
+  if(Object.keys(charMapA).length !== Object.keys(charMapB).length) {
     return false;
   }
 
