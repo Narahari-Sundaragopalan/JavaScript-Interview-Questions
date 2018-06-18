@@ -30,7 +30,7 @@ function anagrams(stringA, stringB) {
 
 function buildCharMap(str) {
   const charMap = {};
-  for (let char in str.replace(/[^\w]/g, '').toLowerCase()) {
+  for (let char of str.replace(/[^\w]/g, '').toLowerCase()) {
     charMap = charMap[char] + 1 || 1;
   }
 
