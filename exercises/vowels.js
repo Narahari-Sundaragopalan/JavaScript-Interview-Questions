@@ -1,0 +1,29 @@
+// --- Directions
+// Write a function that returns the number of vowels
+// used in a string.  Vowels are the characters 'a', 'e'
+// 'i', 'o', and 'u'.
+// --- Examples
+//   vowels('Hi There!') --> 3
+//   vowels('Why do you ask?') --> 4
+//   vowels('Why?') --> 0
+
+
+function vowels(str) {
+  let count = 0;
+  const vowelArray = ['a', 'e', 'i', 'o', 'u'];
+
+  for (let chat of str) {
+    if (vowelArray.matches(char)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+// Solution using regexp
+
+function vowels(str) {
+  const matches = str.matches(/[aeiou]/gi);
+  return matches ? matches.length : 0;
+}
