@@ -1,18 +1,14 @@
-# JavaScript Problems & Sample Projects
+# JavaScript Questions & Problems for an Interview
 
-> Contains solved JavaScript exercises, generally asked in interviews. Also included are a few sample JS projects.
+> Contains common JavaScript questions, problems, generally asked in interviews. This is based on my preparation and research for a JavaScript developer interview
 
-[JS Exercises](https://github.com/Narahari-Sundaragopalan/vanillaJSProjects/tree/master/exercises)
-
-1. [Anagrams](https://github.com/Narahari-Sundaragopalan/vanillaJSProjects/blob/master/exercises/anagrams.js)
-2. [Sentence Capitalize](https://github.com/Narahari-Sundaragopalan/vanillaJSProjects/blob/master/exercises/capitalize.js)
-3. [Array Chunk](https://github.com/Narahari-Sundaragopalan/vanillaJSProjects/blob/master/exercises/chunk.js)
-4. [FizzBuzz Problem](https://github.com/Narahari-Sundaragopalan/vanillaJSProjects/blob/master/exercises/fizzBuzz.js)
-5. [Find max Character](https://github.com/Narahari-Sundaragopalan/vanillaJSProjects/blob/master/exercises/maxChar.js)
-6. [Palindrome](https://github.com/Narahari-Sundaragopalan/vanillaJSProjects/blob/master/exercises/palindrome.js)
-7. [Integer Reversal](https://github.com/Narahari-Sundaragopalan/vanillaJSProjects/blob/master/exercises/reverseInt.js)
-8. [String Reversal](https://github.com/Narahari-Sundaragopalan/vanillaJSProjects/blob/master/exercises/reverseString.js)
-9. [Steps](https://github.com/Narahari-Sundaragopalan/vanillaJSProjects/blob/master/exercises/steps.js)
+1. [Arrays](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/arrays)
+2. [Linked List](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/linkedlist)
+3. [Sorting](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/sorting)
+4. [Stacks & Queues](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/stacks%26queues)
+5. [Strings](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/strings)
+6. [Trees](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/trees)
+7. [Miscellaneous](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/misc)
 
 
 ## License
