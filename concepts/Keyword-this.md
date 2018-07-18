@@ -224,7 +224,7 @@ function Person(firstName, lastName) {
   this.lastName = lastName;
 }
 
-var newPerson = Person("Narahari", "Sundaragopalan");
+var newPerson = new Person("Narahari", "Sundaragopalan");
 ```
 
 * **The keyword "this" is a reserved keyword in JavaScript and its value is determined at execution**
