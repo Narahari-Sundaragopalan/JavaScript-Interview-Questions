@@ -1,6 +1,6 @@
 # JavaScript Questions & Problems for an Interview
 
-> Contains common JavaScript questions, problems, generally asked in interviews. This is based on my preparation and research for a JavaScript developer interview
+> Contains common JavaScript questions, problems, generally asked in technical and software coding interviews. This is based on my preparation and research for a software developer interview
 
 1. [Arrays](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/arrays)
 2. [Linked List](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/linkedlist)
@@ -9,6 +9,7 @@
 5. [Strings](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/strings)
 6. [Trees](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/trees)
 7. [Miscellaneous](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/misc)
+8. [Technical-Questions-JavaScript](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Questions/blob/master/questions/JS-questions.md)
 
 
 ## License
