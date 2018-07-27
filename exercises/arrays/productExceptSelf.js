@@ -3,22 +3,25 @@
 // output[i] is equal to the product of all the elements in the array other than itself.
 // (Solve this in O(n) without division)
 
+
 function productExceptSelf(arr) {
   let product = 1;
-  let output = [];
+  let outputArr = [];
 
-  // Get the product of the elements to the left side of the index
-  // and push them to an output array
+  // Find the product of the elements to the left of each element
+  // and store in array
   for (let i = 0; i <= arr.length - 1; i++) {
-    output.push(product);
+    outputArr.push(product);
     product = product * arr[i];
   }
 
+  // Find the product of elements to the right of each element
+  // and update the output array
   product = 1;
   for (let i = arr.length - 1; i >= 0; i--) {
-    output[i] = output[i] * product;
-    product = product * arr[i];
+    outputArr[i] = outputArr[i] * product;
+    product = product * arr[i]
   }
 
-  return output;
+  return outputArr;
 }
