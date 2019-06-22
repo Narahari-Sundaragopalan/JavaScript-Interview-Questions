@@ -34,7 +34,7 @@ function chunk(array, size) {
 
 // Using the slice method in subarray
 
-function chunk(array. size) {
+function chunk(array, size) {
   const chunked = [];
   let index = 0;
 
