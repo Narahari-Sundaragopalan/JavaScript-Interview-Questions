@@ -23,3 +23,39 @@ function findNthPrime() {
 
   return primes[primes.length - 1];
 }
+//6th prime is 13
+
+// Using closures and storing primes of found numbers
+function findNthPrimeMemoize(maxPrime) {
+    const primes = [2];
+    let startingValue = 3;
+    let divisor = 2;
+    const store = {};
+
+    function memoize() {
+        if (store[maxPrime]) {
+            console.log("returning from store");
+            return store[maxPrime];
+        } else {
+            while (primes.length < maxPrime) {
+                while (startingValue % divisor !== 0) {
+                    divisor++;
+        
+                    if (startingValue === divisor) {
+                        primes.push(startingValue);
+                        break;
+                    }
+                }
+                startingValue++;
+                divisor = 2;
+            }
+            store[maxPrime] = primes[primes.length - 1];
+        
+            return store[maxPrime];
+        }
+    }
+
+    return memoize;
+}
+
+
