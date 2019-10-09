@@ -28,3 +28,34 @@ class Stack {
     }
 }
 ```
+
+### QUEUES
+
+Queues are complimentary to stacks. In this type of DS, elements are removed from the start. The oldest element is removed first.
+
+```js
+class Queue {
+    constructor() {
+        this.list = [];
+        this.length = 0;
+    }
+
+    enqueue(value) {
+        this.list.push(value);
+        this.length++;
+    }
+
+    dequeue() {
+        if (this.length === 0) {
+            return;
+        }
+
+        this.length--;
+        return this.list.shift();
+    }
+
+    peek() {
+        return this.list[0];
+    }
+}
+```
