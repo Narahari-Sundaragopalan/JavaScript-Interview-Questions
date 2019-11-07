@@ -1,12 +1,14 @@
-/*
+## LINKED LIST
+
 Linked lists are a common data structure used to implment 
 other data structures. They allow data to be inserted at
 the start, middle or end.
 
-A good way to implmenet linked list is 1 -> 2 -> 3 -> 4 -> 5
+A good way to implement linked list is `1 -> 2 -> 3 -> 4 -> 5`
 
 Visualize them as a JSON like structure
 
+```
 {
     value: 1,
     next: {
@@ -17,8 +19,9 @@ Visualize them as a JSON like structure
         }
     }
 }
-*/
+```
 
+```js
 class LinkedList {
     constructor() {
         this.head = null;
@@ -26,12 +29,10 @@ class LinkedList {
     }
 
     get(position) {
-        // Check if its a valid position
         if (position >= this.length) {
-            throw new Error("Invalid position, greater than length of linked list")
+            throw new Error('Position cannot be greater than linked list size');
         }
 
-        // Else loop through the nodes, till we get to the position
         let current = this.head;
 
         for (let index = 0; index < position; index++) {
@@ -42,45 +43,40 @@ class LinkedList {
     }
 
     add(position, value) {
-        // create a new node with value and next set to null
         let node = {
             value,
             next: null
         };
 
-        // if position is first, set node's next to point to head
         if (position === 0) {
             node.next = this.head;
+            this.head = node;
         } else {
-            // find the prev and current nodes
-            let prev = this.get(position - 1);
-            let current = prev.next;
+            let previous = this.get(position - 1);
+            let current = previous.next;
 
-            // Set the previous node's next to the new one and
-            // set the new node's next to the current
-            prev.next = node;
             node.next = current;
+            previous.next = node;
         }
 
         this.length++;
     }
 
     remove(position) {
-        // Check if list is empty and throw error
-        if(!this.head) {
-            throw new Error("Cannot remove from an empty list");
+        if (!this.head) {
+            throw new Error('Linked List is empty');
         }
 
-        // if position is 0 we need to remove the head, 
+            // If we're removing the first node we simply need to set the head to the next node in the chain
         if (position === 0) {
             this.head = this.head.next;
         } else {
-            // find the previous node to the position
-            let prev = this.get(position - 1);
-            prev.next = prev.next.next;
+            // For any other position, we need to look up the previous node and set it to the node after the current position.
+            let previous = this.get(position - 1);
+            previous.next = previous.next.next;
         }
 
-        // Decrement the length of the list
         this.length--;
     }
 }
+```

@@ -35,3 +35,36 @@ function findKClosest(numDestinations, allLocations, numDeliveries) {
   }
   return outputArray;
 }
+
+
+// More generic version
+
+const findKClosestPoints = (origin, pointsArray, k) => {
+    const output = [];
+    const pointsDistanceMap = [];
+
+    const distanceFromOrigin = point => {
+        return (
+            ( (origin[0] - point[0]) * (origin[0] - point[0]) ) +
+            ( (origin[1] - point[1]) * (origin[1] - point[1]) )
+        );
+    }
+
+    for (let point of pointsArray) {
+        pointsDistanceMap.push({
+            location: point,
+            distance: distanceFromOrigin(point)
+        });
+    }
+
+    pointsDistanceMap.sort((a, b) => a.distance - b.distance);
+
+    for (let i = 0; i < k; i++) {
+        output.push(pointsDistanceMap[i].location);
+    }
+
+    return output;
+}
+  
+
+// console.log(findKClosestPoints([0,0], [[-16, 5], [-1, 2], [4, 3], [10, -2], [0, 3], [-5, -9]], 3));

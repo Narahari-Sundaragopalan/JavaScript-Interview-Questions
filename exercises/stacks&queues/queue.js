@@ -15,12 +15,12 @@ class Queue {
 
   // Add a record to the Queue
   add(record) {
-    this.data.unshift(record);
+    this.data.push(record);
   }
 
   // Remove a record from the Queue
   remove() {
-    return this.data.pop();
+    return this.data.shift();
   }
 
   // Return the last element in the queue without popping

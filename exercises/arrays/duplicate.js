@@ -2,11 +2,10 @@
 
 function duplicate(arr, n) {
 	let duplicated = [];
-  duplicated = arr.slice();
-  let index = 0;
-  while (index < n) {
+    let index = 0;
+    while (index < n) {
  	 	duplicated = duplicated.concat(arr);
-    index+= 1;
+        index++;
   }
   return duplicated
 }

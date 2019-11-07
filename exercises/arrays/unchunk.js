@@ -22,3 +22,17 @@ function unChunkArray() {
 
 // function call for test
 //unChunkArray();
+
+const unchunk = array => {
+    let unchunked = [];
+
+    for (let element of array) {
+        if (Array.isArray(element)) {
+            unchunked = unchunked.concat(unchunk(element));
+        } else {
+            unchunked.push(element);
+        }
+    }
+
+    return unchunked;
+}
