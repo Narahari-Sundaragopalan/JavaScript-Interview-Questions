@@ -1,12 +1,15 @@
-// Sample ajax request
+## AJAX
 
+```js
 try {
     const data = await postData("https://www.example.com/answer", {answer : 42});
     console.log(JSON.stringify(data));
 } catch (error) {
     console.error(error);
 }
+```
 
+```js
 async function postData(url = '', data = {}) {
     const response = await fetch(url , {
         method: 'POST',
@@ -33,3 +36,4 @@ var request = new XMLHttpRequest();
 request.addEventListener('load', listenRequest);
 request.open("GET", "https://www.example.com/eg.txt");
 request.send();
+```
