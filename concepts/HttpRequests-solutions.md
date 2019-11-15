@@ -1,13 +1,7 @@
-/////////////////
-//             //
-// CHALLENGE 1 //
-//             //
-/////////////////
 
-// /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
-// console.log('Start of Challenge 1');
-// ...your code below
+### CHALLENGE 1
 
+```js
 console.log("I am at the beginning of the code");
 
 setTimeout(function() { console.log("I am in the setTimeout callback function after 3 seconds(3000ms)");}, 3000)
@@ -15,19 +9,13 @@ setTimeout(function() { console.log("I am in the setTimeout callback function af
 console.log("I am at the end of the code");
 
 
-
 // console.log('End of Challenge 1');
 // */// (do not alter this line)
+```
 
+### CHALLENGE  2 
 
-
-
-/////////////////
-//             //
-// CHALLENGE 2 //
-//             //
-/////////////////
-
+```js
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log('Start of Challenge 2');
 // ...your code below
@@ -49,15 +37,12 @@ function clearAllIntervals() {
 }
 console.log('End of Challenge 2');
 // */// (do not alter this line)
+```
 
 
+### CHALLENGE 3
 
-/////////////////
-//             //
-// CHALLENGE 3 //
-//             //
-/////////////////
-
+```js
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log('Start of Challenge 3');
 // ...your code below
@@ -82,16 +67,12 @@ function everyXSecsForYsecs(callback, xSecs, ySecs) {
 
 console.log('End of Challenge 3');
 // */// (do not alter this line)
+```
 
 
+### CHALLENGE 4
 
-
-/////////////////
-//             //
-// CHALLENGE 4 //
-//             //
-/////////////////
-
+```js
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log('Start of Challenge 4');
 // ...your code below
@@ -113,15 +94,12 @@ forEach(delays, delayLog);
 
 console.log('End of Challenge 4');
 // */// (do not alter this line)
+```
 
 
+### CHALLENGE 5
 
-/////////////////
-//             //
-// CHALLENGE 5 //
-//             //
-/////////////////
-
+```js
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log('Start of Challenge 5');
 // ...your code below
@@ -149,15 +127,12 @@ activateButton.addEventListener("click", function() {
 document.body.style.background = '#def';
 console.log('End of Challenge 3');
 // */// (do not alter this line)
+```
 
 
+### CHALLENGE 6
 
-/////////////////
-//             //
-// CHALLENGE 6 //
-//             //
-/////////////////
-
+```js
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log('Start of Challenge 6');
 var dataReceived;
@@ -186,15 +161,12 @@ console.log("Data is ", dataReceived);
 
 console.log('End of Challenge 6');
 // */// (do not alter this line)
+```
 
 
+### CHALLENGE 7
 
-/////////////////
-//             //
-// CHALLENGE 7 //
-//             //
-/////////////////
-
+```js
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log('Start of Challenge 7');
 // ...your code below
@@ -218,15 +190,12 @@ request.send();
 
 console.log('End of Challenge 7');
 // */// (do not alter this line)
+```
 
 
+### CHALLENGE 8
 
-/////////////////
-//             //
-// CHALLENGE 8 //
-//             //
-/////////////////
-
+```js
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log('Start of Challenge 8');
 // ...your code below
@@ -257,15 +226,12 @@ requestEvents.send();
 
 console.log('End of Challenge 8');
 // */// (do not alter this line)
+```
 
 
+### CHALLENGE 9
 
-/////////////////
-//             //
-// CHALLENGE 9 //
-//             //
-/////////////////
-
+```js
 // /* <<<=== Remove the first two slashes (//) to comment out this challenge when finished
 console.log('Start of Challenge 9');
 // ...your code below
@@ -293,11 +259,7 @@ requestEventsInUsa.open("GET", eventsAPIUSA);
 requestEventsInUsa.send();
 
 
-
-
-
-
 console.log('End of Challenge 9');
 // */// (do not alter this line)
-
+```
 

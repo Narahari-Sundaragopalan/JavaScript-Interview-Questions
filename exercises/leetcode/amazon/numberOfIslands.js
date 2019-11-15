@@ -32,7 +32,7 @@ const numberOfIslands = grid => {
 
     const isLand = (x, y) => {
         return x > -1 && x < grid.length && y > -1 &&
-                y < grid[0].length && grid[x, y] !== '0';
+                y < grid[0].length && grid[x][y] !== '0';
     }
 
     const removeIsland = (startX, startY) => {
