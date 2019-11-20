@@ -1,3 +1,8 @@
+# CALLBACKS
+
+### MAP
+
+```js
 function map(array, callback) {
     const output = [];
     for (let element of array) {
@@ -5,19 +10,31 @@ function map(array, callback) {
     }
     return output;
 }
+```
 
+### FOR EACH
+
+```js
 function forEach(array, callback) {
     for (let element of array) {
         callback(element);
     }
 }
+```
 
+### REDUCE
+
+```js
 function reduce(array, callback, initialValue) {
     array.forEach(element => initialValue += callback(element));
 
     return initialValue;
 }
+```
 
+### INTERSECTION
+
+```js
 function intersection(arrays) {
     return arrays.reduce(intersectionReducer);
 }
@@ -25,7 +42,11 @@ function intersection(arrays) {
 function intersectionReducer(accumulator, currentValue) {
     return accumulator.filter(element => currentValue.includes(element));
 }
+```
 
+### UNION
+
+```js
 function union(arrays) {
     return arrays.reduce(unionReducer);
 }
@@ -33,3 +54,4 @@ function union(arrays) {
 function unionReducer(accumulator, currentValue) {
     return [...new Set([...accumulator, ...currentValue])];
 }
+```

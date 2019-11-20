@@ -1,4 +1,8 @@
+# CLOSURES
 
+### Example 1
+
+```js
 function createFunction() {
   function hello() {
     console.log("hello");
@@ -10,9 +14,11 @@ function createFunction() {
 
 var function1 = createFunction();
 function1();
-/*********************************************** */
+```
 
+### Example 2
 
+```js
 function createFunctionPrinter(input) {
   function printWord() {
     console.log(input);
@@ -27,9 +33,11 @@ var printSample = createFunctionPrinter('sample');
 printSample();
 var printHello = createFunctionPrinter('hello');
 printHello();
-/********************************************************** */
+```
 
+### Example 3
 
+```js
 function outer() {
   var counter = 0; // this variable is outside incrementCounter's scope
   function incrementCounter () {
@@ -42,8 +50,7 @@ function outer() {
 var willCounter = outer();
 var jasCounter = outer();
 
-// Uncomment each of these lines one by one.
-// Before your do, guess what will be logged from each function call.
+// Before your execute, guess what will be logged from each function call.
 
 willCounter();  // 1
 willCounter();  // 2
@@ -51,9 +58,11 @@ willCounter();  // 3
 
 jasCounter();   // 1
 willCounter();  // 4
-/******************************************************** */
+```
 
+### Example 4
 
+```js
 function addByX(x) {
   function innerFunc(input) {
     return input + x;
@@ -69,8 +78,11 @@ console.log(addByTwo(1));  // returns 3
 
 // now call addByTwo with an input of 2
 console.log(addByTwo(2));  // returns 4
+```
 
+### Example 5
 
+```js
 //--------------------------------------------------
 // Extension
 //--------------------------------------------------
@@ -97,8 +109,11 @@ var onceFunc = once(addByTwo);
 console.log(onceFunc(4));  //should log 6
 console.log(onceFunc(10));  //should log 6
 console.log(onceFunc(9001));  //should log 6
+```
 
+### Example 6
 
+```js
 function after(count, func) {
   let counter = 0;
   function innerCalled() {
@@ -117,10 +132,13 @@ var afterCalled = after(3, called);
 afterCalled(); // -> nothing is printed
 afterCalled(); // -> nothing is printed
 afterCalled(); // -> 'hello' is printed
+```
 
 
+```js
 function delay(func, wait) {
   function callAfterDelay() {
     this.setTimeout(func, wait);
   }
 }
+```
