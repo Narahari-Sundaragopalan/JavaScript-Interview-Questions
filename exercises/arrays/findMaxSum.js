@@ -3,14 +3,11 @@
 
 function findMaxSum(arr) {
   let globalMaxSum = arr[0];
-  let currentMaxSum = 0;
+  let currentMaxSum = arr[0];
 
-  for (let element of arr) {
-    currentMaxSum = currentMaxSum + element;
-
-    if (currentMaxSum > globalMaxSum) {
-      globalMaxSum = currentMaxSum;
-    }
+  for (let i = 1; i < arr.length; i++) {
+    currentMaxSum = Math.max(arr[i], currentMaxSum + arr[i]);
+    globalMaxSum = Math.max(globalMaxSum, currentMaxSum);
   }
 
   return globalMaxSum;
