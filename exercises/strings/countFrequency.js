@@ -14,5 +14,5 @@ function countFrequency(str, n) {
     return countMap[b] - countMap[a];
   });
 
-  return sorted.slice(0, n).join('\n');
+  return sortedMap.slice(0, n).join('\n');
 }

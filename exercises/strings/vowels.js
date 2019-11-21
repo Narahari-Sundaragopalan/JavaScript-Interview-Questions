@@ -12,7 +12,7 @@ function vowels(str) {
   let count = 0;
   const vowelArray = ['a', 'e', 'i', 'o', 'u'];
 
-  for (let chat of str) {
+  for (let char of str) {
     if (vowelArray.matches(char)) {
       count++;
     }
