@@ -18,7 +18,7 @@ var house = new House(2,2,1000);
 * It then sets the keyword "this" to the newly created empty object
 * It adds an implicit line "return this" to the end of the function which follows it
 * It adds a property on the empty object called "__proto__" (commonly called as dunder proto)
-* The dunder proto links the object that was created to the constructor function 
+* The dunder proto links the object that was created to the constructor function
 
 ```js
 function Dog(name, age) {
@@ -53,14 +53,14 @@ function Car(make, model, year) {
 
 ```js
 function Motorcycle(make, model, year) {
-  Car.call(this, make, model, year);   
+  Car.call(this, make, model, year);
   this.numWheels = 2;
 }
 
 
 //Using apply function
 function Motorcycle(make, model, year) {
-  Car.apply(this, [make, model, year]);   
+  Car.apply(this, [make, model, year]);
   this.numWheels = 2;
 }
 ```

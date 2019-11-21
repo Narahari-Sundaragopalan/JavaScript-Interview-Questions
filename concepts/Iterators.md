@@ -1,6 +1,6 @@
 ### ITERATORS
 
-1. Create a for loop that iterates through an array and returns the sum of the elements of the array.
+> Create a for loop that iterates through an array and returns the sum of the elements of the array.
 
 ```js
 function sumFunc(arr) {
@@ -16,7 +16,7 @@ const array = [1, 2, 3, 4];
 console.log(sumFunc(array)); // -> should log 10
 ```
 
-2. Create a functional iterator for an array that returns each value of the array when called, one element at a time.
+> Create a functional iterator for an array that returns each value of the array when called, one element at a time.
 
 ```js
 const returnIterator = (arr) => {
@@ -206,7 +206,7 @@ function* createConversation(str) {
 console.log(createConversation('english').next());
 ```
 
-9. Use async/await to console.log a sentence comprised of a noun and verb in which the non async function takes in a noun, concatenates it with a hard coded verb and returns it to the async function to be console.logged after a duration of 3 seconds. Call the async function only once, feeding it a noun to make this happen.
+> Use async/await to console.log a sentence comprised of a noun and verb in which the non async function takes in a noun, concatenates it with a hard coded verb and returns it to the async function to be console.logged after a duration of 3 seconds. Call the async function only once, feeding it a noun to make this happen.
 
 ```js
 const waitForVerb = (noun) => {

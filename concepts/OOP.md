@@ -128,9 +128,9 @@ class DeveloperClass extends PersonClass {
         console.log(`Hello World, my name is ${this.name}`);
     }
 }
-var thai = new DeveloperClass('Thai', 32);
-console.log(thai.name); // -> Logs 'Thai'
-thai.introduce(); //-> Logs 'Hello World, my name is Thai'
+var hari = new DeveloperClass('Hari', 32);
+console.log(hari.name); // -> Logs 'Hari'
+hari.introduce(); //-> Logs 'Hello World, my name is Hari'
 ```
 
 #### EXTENSION: SUBCLASSING

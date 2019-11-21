@@ -5,11 +5,11 @@ The concept of currying happens when a function does not accept all of its argum
 ## Normal function
 
 ```js
-let dragon = (name, size, element) => 
+let dragon = (name, size, element) =>
     name + 'is a ' +
-    size + 'dragon that breathes ' + 
+    size + 'dragon that breathes ' +
     element + '!';
-    
+
 console.log(dragon('drogon', 'huge', 'fire'));
 ```
 
@@ -21,7 +21,7 @@ let dragon =
         size => 
             element =>
                 name + 'is a ' +
-                size + 'dragon that breathes ' + 
+                size + 'dragon that breathes ' +
                 element + '!';
 
 console.log(dragon('drogon')('huge')('fire'));
@@ -41,9 +41,9 @@ console.log(hugeDragon('fire'));
 import _ from 'lodash';
 
 // Function in its normal form
-let dragon = (name, size, element) => 
+let dragon = (name, size, element) =>
     name + 'is a ' +
-    size + 'dragon that breathes ' + 
+    size + 'dragon that breathes ' +
     element + '!';
 
 // Turned into a curried function using lodash

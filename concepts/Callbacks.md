@@ -55,3 +55,15 @@ function unionReducer(accumulator, currentValue) {
     return [...new Set([...accumulator, ...currentValue])];
 }
 ```
+
+```js
+// What happens when we call "new" keyword behind the scenes
+
+var obj = new Foo();
+
+// translates to
+
+var obj = new Object();
+obj.[[Prototype]] = Foo.prototype;
+Foo.call(o);
+```

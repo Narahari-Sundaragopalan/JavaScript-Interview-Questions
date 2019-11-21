@@ -98,7 +98,7 @@ var person = {
 }
 
 // Using Call function to attach "this" keyword to person
-person.dog.sayHello.call(person) // Hello Colt
+person.dog.sayHello.call(person) // Hello Hari
 
 person.dog.determineContext.call(person); // Evaluates to true
 
