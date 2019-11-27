@@ -37,3 +37,35 @@ request.addEventListener('load', listenRequest);
 request.open("GET", "https://www.example.com/eg.txt");
 request.send();
 ```
+
+
+### Promisifying HTTP Request
+
+```js
+function get(url) {
+    return new Promise((resolve, reject) => {
+        let req = new XMLHttpRequest();
+        req.open('GET', url);
+
+        req.onload = function() {
+            if (req.status === 200) {
+                resolve(response);
+            } else {
+                reject(Error(req.errorText));
+            }
+        };
+
+        req.onError = function() {
+            reject(Error('Network Error'));
+        }
+
+        req.send();
+    });
+}
+
+get('dummyApiResponse.json').then(response => {
+    console.log("Success ", JSON.parse(response));
+}).catch(error => {
+    console.log("Error ", error);
+})
+```
