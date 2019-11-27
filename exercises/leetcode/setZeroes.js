@@ -55,8 +55,8 @@ const setZeroes = matrix => {
 		}
 	}
 
-	for (let i = 0; i < rows; i++) {
-		for (let j = 0; j < columns; j++) {
+	for (let i = 1; i < rows; i++) {
+		for (let j = 1; j < columns; j++) {
 			if (matrix[i][0] === 0 || matrix[0][j] === 0) {
 				matrix[i][j] = 0;
 			}
