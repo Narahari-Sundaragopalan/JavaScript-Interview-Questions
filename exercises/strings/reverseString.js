@@ -31,3 +31,16 @@ function reverse(str) {
 function reverse(str) {
   return str.split('').reduce((rev, char) => char + rev, '');
 }
+
+function reverse(str) {
+	let left = 0;
+	let right = str.length - 1;
+
+	while (left < right) {
+		let tmp = str[left];
+		str[left] = str[right];
+		str[right] = tmp;
+	}
+
+	return str;
+}

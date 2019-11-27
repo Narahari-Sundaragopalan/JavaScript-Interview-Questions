@@ -15,24 +15,13 @@ class LinkedList {
 
 function removeDuplicates(head) {
   let node = head;
-  while (node) {
-    if (node.next && checkDuplicates(head, node.next)) {
-      node.next = node.next.next;
-    }
-    node = node.next;
+  while (node && node.next) {
+    if (node.next.data === node.data) {
+      	node.next = node.next.next;
+    } else {
+		node = node.next;
+	}
   }
 
   return head;
-}
-
-function checkDuplicates(head, node) {
-  let currentNode = head;
-  while (currentNode !== node) {
-    if (currentNode.data === node.data) {
-      return true;
-    }
-    currentNode = currentNode.next;
-  }
-
-  return false;
 }

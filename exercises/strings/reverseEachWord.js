@@ -55,3 +55,9 @@ const reverse = word => {
 
 	return result;
 }
+
+
+/**If its function to only reverse words of a sentence and not words individually */
+var reverseWords = function(s) {
+    return s.split(' ').reverse().filter(word => word !== '').join(' ').trim();
+};
