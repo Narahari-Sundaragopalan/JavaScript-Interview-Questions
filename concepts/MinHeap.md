@@ -50,7 +50,7 @@ class MinHeap {
             let right = (2 * 1) + 1;
 
             while (this.heap[i] >= this.heap[left] || this.heap[i] >= this.heap[right]) {
-                if (this.heap[left] < this.heap[right]) {
+                if (this.heap[left] < this.heap[right] || !this.heap[right]) {
                     [this.heap[i], this.heap[left]] = [this.heap[left], this.heap[i]];
                     i = 2 * i;
                 } else {
@@ -60,7 +60,7 @@ class MinHeap {
                 left = 2 * i;
                 right = (2 * i) + 1;
 
-                if (this.heap[left] == undefined || this.heap[right] == undefined) {
+                if (this.heap[left] == undefined && this.heap[right] == undefined) {
                     break;
                 }
             }

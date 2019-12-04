@@ -1,21 +1,16 @@
 /**
- * Find the kth largest element in an unsorted array. 
- * Note that it is the kth largest element in the sorted order, not the kth distinct element.
+ * Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), 
+ * find the minimum number of conference rooms required.
 
 Example 1:
 
-Input: [3,2,1,5,6,4] and k = 2
-Output: 5
+Input: [[0, 30],[5, 10],[15, 20]]
+Output: 2
 Example 2:
 
-Input: [3,2,3,1,2,4,5,5,6] and k = 4
-Output: 4
-Note:
-You may assume k is always valid, 1 ≤ k ≤ array's length.
+Input: [[7,10],[2,4]]
+Output: 1
  */
-
-// Solving with min heap -> Will build MinHeap in JavaScript first
-
 class MinHeap {
     constructor() {
         this.heap = [null];
@@ -94,18 +89,29 @@ class MinHeap {
     size() {
         return this.heap.length;
     }
+
+    peek() {
+        return this.heap[1];
+    }
 }
 
-const findKthLargest = (nums, k) => {
-    const minHeap = new MinHeap();
+const minMeetingRooms = intervals => {
+    intervals = intervals.sort(([a,b], [c,d]) => a - c);
 
-    for (let num of nums) {
-        minHeap.insert(num);
+    let minHeap = new MinHeap();
 
-        if (minHeap.size() > k + 1) {
+    minHeap.insert(intervals[0][1]); // adding end time to minHeap
+
+    for (let i = 1; i < intervals.length; i++) {
+        if (intervals[i][0] >= minHeap.peek()) {
             minHeap.remove();
         }
+
+        // we need to add the end time of interval in both cases
+        // 1. when we add a new meeting 
+        // 2. or update an existing meeting with new end time
+        minHeap.insert(intervals[i][1]);
     }
 
-    return minHeap.remove();
+    return minHeap.size() - 1;
 }
