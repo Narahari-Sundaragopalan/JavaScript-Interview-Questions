@@ -21,7 +21,7 @@
 	</div>
 	
 	<button class="carouselButton carouselButtonRight">
-		<img src="images/left.svg" alt="" />
+		<img src="images/right.svg" alt="" />
 	</button>
 
 	<div class="carouselNavigation">
