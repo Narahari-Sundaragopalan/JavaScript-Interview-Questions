@@ -25,6 +25,6 @@ class Queue {
 
   // Return the last element in the queue without popping
   peek() {
-    return this.data[this.data.length - 1];
+    return this.data[0];
   }
 }

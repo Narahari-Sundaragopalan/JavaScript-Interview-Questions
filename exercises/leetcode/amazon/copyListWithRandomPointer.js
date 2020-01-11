@@ -35,7 +35,7 @@ const copyRandomList = head => {
         }
 
         if (visited.has(node)) {
-            visited.get(node);
+            return visited.get(node);
         }
 
         visited.set(node, new Node(node.val, node.next, node.random));
