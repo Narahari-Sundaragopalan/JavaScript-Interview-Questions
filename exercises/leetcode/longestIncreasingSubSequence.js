@@ -14,23 +14,24 @@ Follow up: Could you improve it to O(n log n) time complexity?
  */
 
 const lengthOfLIS = nums => {
-	if (!nums.length) {
-		return 0;
-	}
+	if (nums.length === 0) {
+        return 0;
+    }
 
-	let maxAns = 1;
-	let dp = [1];
+    // array to store length of longest sequence up to each index
+    let dp = [0];
+    let maxAns = 1;
 
-	for (let i = 1; i < nums.length; i++) {
-		let maxVal = 0;
-		for (let j = 0; j < i; j++) {
-			if (nums[i] > nums[j]) {
-				maxVal = Math.max(maxVal, dp[j]);
-			}
-		}
-		dp[i] = maxVal + 1;
-		maxAns = Math.max(maxAns, dp[i]);
-	}
+    for (let i = 1; i < nums.length; i++) {
+        let maxVal = 0;
+        for (let j = 0; j < i; j++) {
+            if (nums[i] > nums[j]) {
+                maxVal = Math.max(maxVal, dp[j]);
+            }
+        }
+        dp[i] = maxVal + 1;
+        maxAns = Math.max(maxAns, dp[i]);
+    }
 
-	return maxAns;
+    return maxAns;
 }
