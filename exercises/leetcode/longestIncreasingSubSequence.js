@@ -35,3 +35,8 @@ const lengthOfLIS = nums => {
 
     return maxAns;
 }
+
+/**
+ * Time Complexity: O(n^2)
+ * Space Complexity: O(n)
+ */

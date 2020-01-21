@@ -20,3 +20,23 @@ const isPalindrome = s => {
 
 	return s === rev;
 }
+
+const isPalindrome = s => {
+    let charArray = s.replace(/[^A-Z0-9+$]/gi, '').toLowerCase().split('');
+    let start = 0, end = charArray.length - 1;
+
+    while (start <= end) {
+        if (charArray[start] !== charArray[end]) {
+            return false;
+        }
+        start++;
+        end--;
+    }
+
+    return true;
+}
+
+/**
+ * Time Complexity: O(log N)
+ * Space Complexity: O(N)
+ */

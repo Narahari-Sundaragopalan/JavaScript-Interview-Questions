@@ -57,7 +57,25 @@ const reverse = word => {
 }
 
 
-/**If its function to only reverse words of a sentence and not words individually */
+/**
+ * If its function to only reverse words of a sentence and not words individually 
+ * */
 var reverseWords = function(s) {
-    return s.split(' ').reverse().filter(word => word !== '').join(' ').trim();
+    //return s.split(' ').reverse().filter(word => word !== '').join(' ').trim();
+    return s.split(/\s+/).reverse().join(' ').trim();
 };
+
+/**
+ * Without using built in functions
+ * @param {string} s 
+ */
+const reverseWords = s => {
+    let result = '';
+    const words = split(s); // or built in fn: s.split(/\s+/)
+
+    for (let word of words) {
+        result = word + result;
+    }
+
+    return result.trim();
+}
