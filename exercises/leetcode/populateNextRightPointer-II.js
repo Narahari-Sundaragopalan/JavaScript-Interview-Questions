@@ -63,3 +63,8 @@ const connect = root => {
 	}
 	return root;
 }
+
+/**
+ * Time Complexity: O(N)
+ * Space Complexity: O(1)
+ */
