@@ -30,7 +30,7 @@ const reverseEachWord = str => {
         while(end < n && str[end] !== ' ') {
             end++;
         }
-        reverse(str, start, end);
+        reverse(str, start, end - 1);
         start = end + 1;
         end++;
     }
@@ -38,7 +38,12 @@ const reverseEachWord = str => {
 
 const reverseWords = s => {
     // reverse the string
-    s = reverse(s, 0, s.length - 1);
+    reverse(s, 0, s.length - 1);
     // reverse each word
     reverseEachWord(s);
 }
+
+/**
+ * Time Complexity: O(N);
+ * Space Complexity: O(1);
+ */
