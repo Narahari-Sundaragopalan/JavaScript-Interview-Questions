@@ -23,7 +23,7 @@ class List {
             return;
         }
 
-        let lastAddress = this.memory[this.length - 1];
+        let lastAddress = this.length - 1;
         const value = this.memory[lastAddress];
 
         delete this.memory[lastAddress];
