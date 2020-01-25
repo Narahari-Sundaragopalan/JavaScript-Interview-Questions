@@ -33,3 +33,9 @@ const groupAnagrams = strs => {
 
 	return Array.from(anagramMap.values());
 }
+
+/**
+ * Time Complexity: O(NKlogK) - Outer Loop : O(N) and string sort O(KlogK) where K is max length
+ * of a string in strs
+ * Space Complexity: O(NK) (N elements with string of size K stored ?)
+ */

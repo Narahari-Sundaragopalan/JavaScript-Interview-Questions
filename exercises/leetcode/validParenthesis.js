@@ -35,3 +35,7 @@ const validParenthesis = str => {
 
 	return strStack.length === 0;
 }
+/**
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ */
