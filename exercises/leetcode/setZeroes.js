@@ -64,14 +64,14 @@ const setZeroes = matrix => {
 	}
 
 	if (matrix[0][0] === 0) {
-		for (let i = 0; i < rows; i++) {
-			matrix[i][0] = 0;
+		for (let j = 0; j < columns; j++) {
+			matrix[0][j] = 0;
 		}
 	}
 
 	if (isCol) {
-		for (let j = 0; j < columns; j++) {
-			matrix[0][j] = 0;
+		for (let i = 0; i < rows; i++) {
+			matrix[i][0] = 0;
 		}
 	}
 }
