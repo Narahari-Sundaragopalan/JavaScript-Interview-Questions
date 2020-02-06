@@ -97,9 +97,8 @@ function showSearchResults(queryStr) {
                         <span class="movie-rating">${movie.rating}</span>
                     </li>`;
         });
+        targetElement.innerHTML = searchResults.join('');
     });
-
-    targetElement.innerHTML = searchResults.join('');
 }
 
 showSearchResults = memoize(showSearchResults);

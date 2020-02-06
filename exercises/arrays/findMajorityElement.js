@@ -3,7 +3,7 @@
 // (and hence there is at most one such element).
 // If input array doesn't contain a majority element, then output "NO Majority Element"
 
-findMajorityElement(n, arr) {
+function findMajorityElement(n, arr) {
   const majorityCount = n / 2;
   const arrayMap = {};
 

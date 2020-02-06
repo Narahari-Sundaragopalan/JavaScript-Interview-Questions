@@ -16,7 +16,7 @@ const twoSum = (nums, target) => {
 
     for (let i = 0; i < nums.length; i++) {
         let compliment = target - nums[i];
-        if (numberMap.get(compliment)) {
+        if (numberMap.has(compliment)) {
             return [numberMap.get(compliment), i];
         }
         numberMap.set(nums[i], i);
