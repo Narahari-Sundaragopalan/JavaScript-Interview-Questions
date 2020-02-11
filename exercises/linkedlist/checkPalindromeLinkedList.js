@@ -1,4 +1,19 @@
-// Implement a function to check if a linked list is a palindrome.
+/**
+ * Given a singly linked list, determine if it is a palindrome.
+
+Example 1:
+
+Input: 1->2
+Output: false
+Example 2:
+
+Input: 1->2->2->1
+Output: true
+Follow up:
+Could you do it in O(n) time and O(1) space?
+ * @param {LinkedList} list 
+ * @return {boolean}
+ */
 
 function checkPalindrome(list) {
   // Find the midpoint of the linked list
@@ -42,3 +57,39 @@ function reverseList(node) {
 
   return previous;
 }
+
+/**
+ * Time Complexity: O(N)
+ * Space Complexity: O(1)
+ */
+
+// Approach 2
+const checkPalindrome = list => {
+	if (!list.head) {
+		return false;
+	}
+
+	const arrayList = [];
+	let node = list.head;
+	while (node) {
+		arrayList.push(node.val);
+		node = node.next;
+	}
+
+	let start = 0, end = arrayList.length - 1;
+
+	while (start <= end) {
+		if (arrayList[start] !== arrayList[end]) {
+			return false;
+		}
+		start++;
+		end--;
+	}
+
+	return true;
+}
+
+/**
+ * Time Complexity: O(N)
+ * Space Complexity: O(N)
+ */

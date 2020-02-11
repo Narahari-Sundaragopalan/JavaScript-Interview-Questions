@@ -9,3 +9,7 @@ const getIntersectionNode = (headA, headB) => {
 
 	return (ptrA === ptrB && ptrA !== null) ? ptrA : null;
 }
+/**
+ * Time Complexity: O (m + n);
+ * Space Complexity: O(1)
+ */
