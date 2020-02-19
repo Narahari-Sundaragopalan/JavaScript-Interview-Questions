@@ -34,3 +34,24 @@ const removeDuplicates = nums => {
 
 	return i + 1;
 }
+
+// To return the uniqueArray
+
+const removeDuplicatesAndReturnUnique = nums => {
+	if (!nums.length) {
+		return [];
+	}
+
+	let i = 0;
+	const uniqueArray = [nums[0]];
+
+	for (let j = 1; j < nums.length; j++) {
+		if (nums[i] !== nums[j]) {
+			uniqueArray.push(nums[j]);
+			i++;
+			nums[i] = nums[j];
+		}
+	}
+
+	return uniqueArray;
+}
