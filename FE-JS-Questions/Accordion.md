@@ -53,7 +53,26 @@
 </div>
 ```
 
+> Basic CSS for Accordion to function
+
 ```css
+.AccordionPanel {
+  border-top: 2px solid grey;
+}
+
+.panelBody {
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  transition: opacity .25s visibility .25s;
+}
+
+.AccordionPanel.accordion-open .panelBody {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
 ```
 
 ```js
