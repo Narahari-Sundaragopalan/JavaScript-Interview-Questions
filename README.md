@@ -10,6 +10,8 @@
 6. [Trees](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/trees)
 7. [Miscellaneous](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Prep/tree/master/exercises/misc)
 8. [Technical-Questions-JavaScript](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Questions/blob/master/questions/JS-questions.md)
+9. [Front-End-Problems](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Questions/tree/master/FE-JS-Questions)
+10. [Web Development Concepts](https://github.com/Narahari-Sundaragopalan/JavaScript-Interview-Questions/tree/master/concepts)
 
 
 ## License
