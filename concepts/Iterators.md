@@ -47,14 +47,14 @@ function nextIterator(arr) {
     let i = 0;
 
     const inner = {
-        const next = () => {
+         next: () => {
             const element = arr[i];
             i++;
 
             return element;
         }
     }
-
+ 
     return inner;
 }
 
